@@ -1,4 +1,4 @@
-var arregloNumero = [1,2,3,4];
+/*var arregloNumero = [1,2,3,4];
 //indexOf encuentra el indice del elemnto
 //console.log(arregloNumero.indexOf(3))
 //a;adir elementos, push
@@ -39,7 +39,7 @@ var arreglo2 = [1,2,3,4];
 
 //map => retorna arreglo ,  muta al arreglo o lo modifica*/ //toca retornar
 
-var arregloMutado = arreglo2.map(
+/*var arregloMutado = arreglo2.map(
     (item,valor,arreglo)=>{
         console.log(item);
         if(item === 2 ){
@@ -92,4 +92,15 @@ var operadoresmapyfilter = arreglo2.map(
 )
 
 console.log(operadoresmapyfilter);
+*/
+///////////////////////////////////////
 
+
+//reduce para calcular
+var arregloReduce = [2,1,11,2,45]
+var valorSumaArreglo = arregloReduce.reduce(
+    (acumulador , item, indice, arreglo)=>{
+        return acumulador + item
+    }, 1
+)
+console.log(valorSumaArreglo);
