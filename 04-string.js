@@ -28,7 +28,6 @@ console.log(texto.concat(', ',nombre));
 
 console.log(`${texto} mas mi nombre: ${nombre}`);
 
-//
 
 //trim quita espacios extremos
 console.log(texto.trim());
@@ -42,9 +41,3 @@ console.log(texto.split(''));
 
 console.log(texto.charAt(1));
 
-//deber palabra='COMERCIO ELECTRONICO',
-//invertir palabra
-
-//cambiar primera palabra en mayuscula , la mitad en mayuscula , la ultima a mayuscula
-//calcular mitad
-//sumar todos los puntos y comas
