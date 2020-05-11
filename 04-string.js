@@ -41,3 +41,5 @@ console.log(texto.split(''));
 
 console.log(texto.charAt(1));
 
+//reverse da la vuelta en un string
+
