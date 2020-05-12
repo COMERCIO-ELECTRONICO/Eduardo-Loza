@@ -8,7 +8,7 @@ function programacionFuncional(numero1, ()=>{ }, 1){
 
 //callbacks llamada vuelta devuelve otra funcion
 
-function primeraFuncion(){
+/*function primeraFuncion(){
     setTimeout(
         ()=>{
         console.log('primera');
@@ -21,7 +21,7 @@ function segundaFuncion(){
     console.log('2');
     
 }
-
+*/
 //primeraFuncion()
 
 //segundaFuncion()
@@ -37,8 +37,8 @@ function funcionCallback(){
 console.log('ya salude');
 
 }
-*/
-//saluda('Nicolas', funcionCallback)
+
+saluda('Nicolas', funcionCallback)*/
 
 /*segunda opcion callback
 
@@ -70,7 +70,7 @@ console.log(saludar);
 
 
 
-var arreglo = ['juan','juan','juan']
+/*var arreglo = ['juan','juan','juan']
 
 var nombreNuevo = 'juan'
 
@@ -89,7 +89,7 @@ function anadirNombre(arreglo, nombre, indice, cb){
 anadirNombre(arreglo, 'nicolas', 1,(mensaje) =>{
     console.log(mensaje);
     
-})
+})*/
 // DEBER
 /*
 usar un arreglo de json (nombre, edad, fechaNacimiento, Telf)
@@ -99,7 +99,7 @@ usar un arreglo de json (nombre, edad, fechaNacimiento, Telf)
 - callback listar usuario
 */
 //listar
-var arregloUsuario = [1,2,3,4,5]
+/*var arregloUsuario = [1,2,3,4,5]
 
 function listarUsuario(arreglo, cb){
 
@@ -116,7 +116,7 @@ function listarUsuario(arreglo, cb){
 listarUsuario(arregloUsuario, (respuestaMensaje)=>{
     console.log(respuestaMensaje);
     
-})
+})*/
 
 
 //null var numero = 0
