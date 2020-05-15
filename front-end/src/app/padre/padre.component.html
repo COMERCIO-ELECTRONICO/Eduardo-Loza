@@ -1,0 +1,12 @@
+<div class="box1">
+<h2>Componente padre</h2>
+<h3>Ingrese el año</h3>
+<input type="text" 
+[(ngModel)]="valorDelInput">
+<h3>Ingrese el nombre del boton</h3>
+<input type="text" 
+[(ngModel)]="nombreBoton">
+<app-hijo [valorDelPadre]="valorDelInput" [valorDelPadre2]="nombreBoton" [datos]="datosHijo" (saludoHijo)="obtenerRespuestaHijo($event)"> 
+    
+</app-hijo>
+</div>

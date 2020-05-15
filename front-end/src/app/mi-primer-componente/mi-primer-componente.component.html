@@ -1,10 +1,28 @@
+<h1>
+  Nicolás Loza
+  {{ datos.tituloPadre }}
+</h1>
 
 <h1>
-    Nicolas loza
-    {{titulo}}
+  PIPES
 </h1>
-<button (click)="SALUDAR()">Boton
-     {{nombreBoton}} 
+<p>
+  objeto (JSON)
+</p>
+{{ datos | json }}
+
+<p>
+  fecha
+</p>
+{{ fecha | date: "yy MM dd" }}
+<p>
+  currency
+</p>
+{{ sueldo | currency }}
+{{ nombre | uppercase }}
+
+<button (click)="SALUDAR()">
+  {{ datos.nombreBotonPadre }}
 </button>
 
- <img [src]="imagenPath" alt="">  
+<img [src]="datos.imagenPadre" />

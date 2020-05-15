@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { MiPrimerComponenteComponent } from './mi-primer-componente/mi-primer-componente.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiPrimerComponenteComponent
+    MiPrimerComponenteComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule //modulo de formulario
   ],
   providers: [],
   bootstrap: [AppComponent]
