@@ -1,23 +1,208 @@
-<div class="container">
-  <h1>Hola</h1>
-</div>
-
-<div class="row" style="background-color: yellow;">
-Fila
-<div class="col-sm-12" style="background-color: chocolate;">
-  Columna
-</div>
-<div class="col-sm-6" style="background-color: gray;">
-  Columna 6
-</div>
-<div class="col-sm-6" style="background-color: green;">
-  Columna 6
-</div>
-<div class="col-sm-4" style="background-color: greenyellow;">columna 4</div>
-<div class="col-sm-4" style="background-color: indigo">columna 4</div>
-<div class="col-sm-4" style="background-color: red;">columna4</div>
-
-</div>
+<!-- Trabajo en Clase
+Tareas: buscar una paginar q no sea respomsive , y hacerla responsive con bootstrap
+Pagina: https://www.maneigroup.com/ -->
 <div>
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://irp-cdn.multiscreensite.com/c65a9705/dms3rep/multi/tablet/consultores-y-auditores-gdf-cial-tda-logo.png"
+      alt=""
+      width="250px"
+    />
+  </a>
+  <button
+    class="navbar-toggler boton"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link textomenu" href="#"
+          >INICIO <span class="sr-only">(current)</span></a
+        >
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle textomenu"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          QUIÉNES SOMOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item textomenu" href="#">MISION</a>
+          <a class="dropdown-item textomenu" href="#">VISION</a>
+          <a class="dropdown-item textomenu" href="#">VALORES</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle textomenu"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          SERVICIOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item textomenu" href="#">ASSURANCE</a>
+          <a class="dropdown-item textomenu" href="#">BUSINESS CONSULTING</a>
+          <a class="dropdown-item textomenu" href="#">FORENSICS</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link textomenu" href="#"
+          >CAPACITACIÓN <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link textomenu" href="#"
+          >CONTÁCTENOS <span class="sr-only">(current)</span></a
+        >
+      </li>
+    </ul>
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://anthoncode.com/wp-content/uploads/2019/01/logotipo-whatsapp-png-vector.png"
+        alt=""
+        width="150px"
+      />
+    </a>
+  </div>
+</nav>
+
+<div
+  style="
+    background-image: url('/assets/img/fondo.jpg');
+    width: 100%;
+    height: 100%;
+  "
+>
+  <div>
+    <div class="contacto">
+      <h1>Servicios de Auditoría y Consultoría Empresarial</h1>
+      <h2>Contamos con un equipo de profesionales altamente capacitados.</h2>
+      <button type="button" class="btn btn-outline-light">CONTÁCTENOS</button>
+    </div>
+  </div>
 </div>
+
+<div>
+  <div class="texto">
+    <h2 class="texto2">Servicios de Auditoría y Consultoría Empresarial</h2>
+    <h6>
+      Somos una empresa especializada en servicios de aseguramiento y
+      consultoría, contamos con un equipo de profesionales altamente capacitados
+      en brindar soluciones de calidad a nuestros clientes. Contamos con un
+      amplio catálogo de servicios, cada uno es ofrecido con los estándares de
+      calidad más altos, teniendo como objetivo la satisfacción de nuestros
+      clientes.
+    </h6>
+  </div>
+</div>
+
+<div class="seccion3">
+  <div>
+    <h2 class="texto2">Servicios a nivel nacional</h2>
+  </div>
+  <div><h6>Ofrecemos los siguientes servicios:</h6></div>
+</div>
+<div class="row seccion4">
+  <div class="serviciosdistancia">
+    <div>
+      <img src="../assets/img/servicio1.jpg" alt="" />
+    </div>
+
+  </div>
+  <div class="serviciosdistancia">
+    <div>
+      <img src="../assets/img/servicio2.jpg" alt="" />
+    </div>
+    
+  </div>
+  <div class="serviciosdistancia">
+    <div>
+      <img src="../assets/img/servicio3.jpg" alt="" />
+    </div>
+  </div>
+  </div>
+</div>
+  <!-- 
+<div class="container-fluid">
+  <h1 class="titulo">
+    TITULO
+  </h1>
+
+  <div class="row" style="background-color: yellow;">
+    FILA
+    <div class="col-sm-12" style="background-color: chocolate;">
+      columna 12
+    </div>
+    <div class="col-sm-6" style="background-color: green;">
+      columna 6
+    </div>
+    <div class="col-sm-6" style="background-color: goldenrod;">
+      columna 6
+    </div>
+    <div class="col-sm-4" style="background-color: rebeccapurple;">
+      columna 4
+    </div>
+    <div class="col-sm-4" style="background-color: red;">
+      columna 4
+    </div>
+    <div class="col-sm-4" style="background-color: gray;">
+      columna 4
+    </div>
+  </div>
+</div>
+
+<div></div>
+
+<h1>
+  DIRECTIVAS
+</h1>
+<h2>angular => ngIf</h2>
+
+<button type="button" class="btn btn-outline-success" (click)="eventoClick()">
+  Success
+</button>
+<p *ngIf="esconderHola">
+  hola
+</p>
+
+<h2>angular => ngfor</h2>
+{{ arregloNumeros }}
+<li *ngFor="let numero of arregloNumeros">
+  <ul>
+    {{
+      numero.nombre
+    }}
+  </ul>
+</li>
+
+<h1>
+  emmet
+  
+    h1*3 
+  .row
+.row>.col-sm-12+.col-sm-6+.col-sm-3*2
+.row.titulo dos clases
+
+</h1> -->
+

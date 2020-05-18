@@ -1,0 +1,44 @@
+.titulo{
+
+    color: green;
+}
+
+
+.textomenu{
+   color: black;
+}
+
+.textomenu:hover{
+    color: #FF5733;
+ }
+ .contacto{
+     padding: 15%;
+     color: white;
+     margin-right: 20%;
+ }
+
+ .boton{
+    
+    border-color: black;
+ }
+
+ .texto{
+     padding: 5% 25% 5% 25%;
+ }
+
+ .texto2{
+    color: #FF5733;
+    font-weight: 700;
+}
+ 
+.seccion3{
+    padding: 5% 30% 5% 40%;
+    background-color: rgb(202, 195, 195);
+}
+.seccion4{
+    padding: 0% 10% 0% 20%;
+    background-color: rgb(202, 195, 195);
+}
+.serviciosdistancia{
+    margin-right: 3%;
+}
