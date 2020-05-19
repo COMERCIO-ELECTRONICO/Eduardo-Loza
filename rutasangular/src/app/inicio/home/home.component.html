@@ -6,3 +6,9 @@
 
 <button
 (click)="irAUsuarioListar()">ir a usuario con click</button>
+
+<h2>Rutas Pokemon</h2>
+
+<button [routerLink]="['/pokemon','listar']">Listar Pokemones</button>
+<button [routerLink]="['/pokemon','editar']">Editar Pokemones</button>
+<button [routerLink]="['/pokemon','crear']">Crear Pokemones</button>

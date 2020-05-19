@@ -1,3 +1,4 @@
+import { PokemonModule } from './pokemon/pokemon.module';
 import { LoginComponent } from './login/login.component';
 import { NoEncontradoComponent } from './inicio/no-encontrado/no-encontrado.component';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,11 @@ path: 'usuario',
 loadChildren: ()=> import('./usuario/usuario.module').then(m=>m.UsuarioModule)
 
 },
+{
+path: 'pokemon',
+loadChildren: ()=> import('../app/pokemon/pokemon.module').then(m=>m.PokemonModule)
 
+},
   {
     path: '',
     redirectTo: '/inicio',
