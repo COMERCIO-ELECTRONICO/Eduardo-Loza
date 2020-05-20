@@ -1,1 +1,104 @@
-<p>login works!</p>
+<div class="container">
+  <h1>
+    variables html #
+  </h1>
+
+  <form
+    (ngSubmit)="obtenerFormulario(formularioUsuario)"
+    #formularioUsuario="ngForm"
+  >
+    <h4>Estados formulario</h4>
+    <h5>
+      <pre>
+      valid: {{formularioUsuario.valid}}
+
+      invalid: {{formularioUsuario.invalid}}
+  <!-- Estado dirty se nesucia el formulario -->
+      dirty: {{formularioUsuario.dirty}}
+ <!-- Estado form fue tocado -->
+      touched: {{formularioUsuario.touched}}
+     <!-- Estado form no fue tocado -->
+     untouched: {{formularioUsuario.untouched}}
+    </pre>
+    </h5>
+    <!-- interplacion y pipe -->
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="ejemplo"
+        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+        minlengh="3"
+        required
+        #campoEmail="ngModel"
+      />
+      <h4>
+        Estados del campo email
+      </h4>
+      <pre>
+        valid: {{campoEmail.valid}}
+
+        invalid: {{campoEmail.invalid}}
+    <!-- Estado dirty se nesucia el formulario -->
+        dirty: {{campoEmail.dirty}}
+   <!-- Estado form fue tocado -->
+        touched: {{campoEmail.touched}}
+       <!-- Estado form no fue tocado -->
+       untouched: {{campoEmail.untouched}}
+      </pre>
+      {{ campoEmail.errors | json }}
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
+    </div>
+
+    <div
+    class="alert alert-danger"
+    role="alert"
+    *ngIf="(campoEmail.errors)
+    && campoEmail.dirty === true">
+      <p
+      *ngIf="campoEmail.errors.required">
+        Campo email requerido
+      </p>
+      <p
+      *ngIf="campoEmail.errors.minlength">
+        minimo 3
+      </p>
+      <p
+      *ngIf="campoEmail.errors.pattern">
+        No es email
+      </p>
+
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInput"
+          aria-describedby="emailHelp"
+          [(ngModel)]="contrasena"
+          name="contrasena"
+          placeholder="*****"
+        
+          minlengh="4"
+          required
+          #campoEmail="ngModel"
+        />
+</div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="formularioUsuario.invalid">Submit</button>
+  </form>
+</div>
+
+<!-- deber confirmar password -->

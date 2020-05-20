@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +7,27 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private readonly _router: Router) {}
-
-  ngOnInit(): void {}
+  id: number;
+  constructor(
+    private readonly _router: Router,
+    private readonly _activateRoute: ActivatedRoute
+  ) {}
+  //observable asincrono
+  ngOnInit(): void {
+    this._activateRoute.params.subscribe(
+      (resultado) => {
+        console.log('resultado observable');
+        console.log(resultado);
+        this.id = resultado.id;
+        console.log('valor de id', this.id);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }
 
   irAUsuarioListar() {
     this._router.navigate(['/usuario', 'listar']);
   }
 }
-
-//modulo pokemon 
-//componente crear listar editar
-//2 botones home qe direccione editar crear 
