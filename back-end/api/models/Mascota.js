@@ -14,7 +14,17 @@ module.exports = {
     },
     edad:{
       type:'number'
+    },
+
+
+    //relacion de muchos a 1
+
+    idUsuario:{
+      model: 'usuario'
     }
+
+
+
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗

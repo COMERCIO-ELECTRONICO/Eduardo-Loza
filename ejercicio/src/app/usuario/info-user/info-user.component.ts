@@ -8,8 +8,8 @@ import {ActivatedRoute} from '@angular/Router';
 export class InfoUserComponent implements OnInit {
 
   constructor(
-
-  ) { }
+    private readonly _activatedRoute: ActivatedRoute
+    ) {} //public  ruta: ActivatedRoute
   nombre1 = '';
   nombre2 = '';
   apellido1 = '';
@@ -20,22 +20,18 @@ export class InfoUserComponent implements OnInit {
   confimarPassword = '';
 
   ngOnInit(): void {
-    // this._activatedRoute.paramMap.subscribe(
-    //   (resultadoParametros)=>{
-    //     console.log(resultadoParametros);
-        
-    //   }
-    // )
+    this._activatedRoute
+    .params
+    .subscribe((resultadoParametros) => {
+      console.log(resultadoParametros);
+    });
   }
 
-  crearOEditar(){
+  crearOEditar() {
     if (this.pass === this.confimarPassword) {
-      alert('Contraseñas Validas')
-      
-    }else{
-      alert('Contraseñas No Validas')
-
+      alert('Contraseñas validas');
+    } else {
+      alert('Contraseñas no validas');
     }
   }
-
 }

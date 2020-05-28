@@ -6,39 +6,38 @@
  */
 
 module.exports = {
-
   attributes: {
     nombre: {
-      type: 'string',
-      required: true
+      type: "string",
+      required: true,
     },
-    correo:{
-      type: 'string',
-      
+    correo: {
+      type: "string",
     },
-    edad:{
-      type: 'number',
+    edad: {
+      type: "number",
     },
-    esCasado:{
-      type:'boolean'
-    }
+    esCasado: {
+      type: "boolean",
+    },
 
+    // relacion una a muchos
+
+    mascotas: {
+      collection: "mascota",
+      via: "idUsuario",
+    },
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
 
-
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
   },
-
 };
-
