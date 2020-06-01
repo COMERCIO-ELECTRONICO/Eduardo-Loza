@@ -1,3 +1,4 @@
+import { LoginGuard } from './guards/login.guard';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { LoginComponent } from './login/login.component';
@@ -18,6 +19,7 @@ const rutas: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+     canActivate: [LoginGuard]
   },
   {
     path: 'estudiante/perfil',
@@ -26,7 +28,7 @@ const rutas: Routes = [
   {
     path: 'usuario',
     loadChildren: () =>
-      import('./usuario/usuario.module').then(mod => mod.UsuarioModule),
+      import('./usuario/usuario.module').then((mod) => mod.UsuarioModule),
   },
   {
     path: 'profesor/perfil',

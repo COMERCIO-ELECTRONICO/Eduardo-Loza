@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/Router';
+import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-info-user',
   templateUrl: './info-user.component.html',
@@ -9,7 +9,7 @@ export class InfoUserComponent implements OnInit {
 
   constructor(
     private readonly _activatedRoute: ActivatedRoute
-    ) {} //public  ruta: ActivatedRoute
+    ) {} 
   nombre1 = '';
   nombre2 = '';
   apellido1 = '';

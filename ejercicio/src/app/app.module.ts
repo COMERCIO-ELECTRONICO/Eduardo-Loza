@@ -1,3 +1,4 @@
+import { LoginService } from './services/login.service';
 import { UsuarioModule } from './usuario/usuario.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
+import {HttpClientModule} from "@angular/common/http";
+import { CommonModule } from '@angular/common';
+import { LoginGuard } from './guards/login.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +34,14 @@ import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.componen
     FormsModule,
     MatInputModule,
     AutoCompleteModule,
-    UsuarioModule
+    UsuarioModule,
+    HttpClientModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [
+    LoginService,
+    LoginGuard
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
